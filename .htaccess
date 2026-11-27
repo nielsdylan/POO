@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /paginas/POO/
+
+# Si el archivo o carpeta existe físicamente, ábrelo normal
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# De lo contrario, manda la ruta a index.php?page=nombre
+RewriteRule ^([a-zA-Z0-9_-]+)/?$ index.php?page=$1 [L,QSA]

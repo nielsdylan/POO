@@ -5,7 +5,7 @@
 
 <header class="masthead">
   <div class="wrap masthead__inner">
-    <a class="brand" href="index.html" aria-label="Fernwick — home">
+    <a class="brand" href="/paginas/POO/home" aria-label="Fernwick — home">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="M12 21V9" />
         <path d="M12 13c0-3.3 2.7-6 6-6 0 3.3-2.7 6-6 6Z" />
@@ -15,10 +15,8 @@
     </a>
 
     <nav class="shopnav" aria-label="Main" data-open="false">
-      <a href="shop.html">Shop</a>
-      <a href="care.html">Care guides</a>
-      <a href="about.html">Our nursery</a>
-      <a href="cart.html">Basket</a>
+      <a href="/paginas/POO/shop">Shop</a>
+      <a href="/paginas/POO/cart">Basket</a>
     </nav>
 
     <div class="masthead__tools">
