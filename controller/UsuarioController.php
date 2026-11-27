@@ -5,17 +5,27 @@
 
 require_once __DIR__ . '/../models/Usuario.php';
 
-$accion = $_GET['accion'] ?? 'listar';
+$peticion = $_GET['peticion'];
+$peggi = $_GET['peggi'];
+$culito = $_GET['culito'];
 
 try {
     $usuarioModel = new Usuario();
 
-    switch ($accion) {
+    switch ($peticion) {
         case 'listar':
             $usuarios = $usuarioModel->obtenerTodos();
             echo json_encode([
                 'ok'   => true,
                 'data' => $usuarios
+            ]);
+            break;
+
+        case 'todos':
+            $usuarios = $usuarioModel->obtenerTodos();
+            echo json_encode([
+                'ok'   => true,
+                'data' => "negritas"
             ]);
             break;
 

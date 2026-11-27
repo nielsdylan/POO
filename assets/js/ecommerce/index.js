@@ -8,7 +8,12 @@ function cargarData() {
     $.ajax({
         url: CONTROLLER_URL + "UsuarioController.php",
         type: "GET", // o "GET" según cómo lo reciba tu controlador
-        data: { action: "listar" }, // opcional, si manejas acciones en el controlador
+        data: { 
+            peticion: "todos" ,
+            peggi: "rota" ,
+            culito: "negrito" ,
+
+        }, // opcional, si manejas acciones en el controlador
         dataType: "json",
         success: function (response) {
             console.log(response);

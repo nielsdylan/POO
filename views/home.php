@@ -403,17 +403,9 @@
 <?php include __DIR__ . '/../layouts/footer.php'; ?>
 <!-- ===================== Cart drawer ===================== -->
 <?php include __DIR__ . '/../layouts/showCart.php'; ?>
+<?php include __DIR__ . '/../layouts/js.php'; ?>
 
-<script>
-    // Ruta base hacia la carpeta controller desde views/
-    window.APP_CONFIG = {
-        baseUrl: "/paginas/POO",
-        controllerUrl: "./../controller/"
-    };
-</script>
-<script src="./../assets/js/main.js" defer></script>
-<script src="./../assets/js/jquery.min.js"></script>
-<script src="./../assets/js/ecommerce/index.js"></script>
+
 
 </body>
 </html>
